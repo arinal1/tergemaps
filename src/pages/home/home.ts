@@ -11,7 +11,7 @@ import { Place } from '../../model/place.model';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  places: {title: string}[] = [];
+  places: {title: String}[] = [];
 
   constructor(
    public navCtrl: NavController,

@@ -3,6 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Storage } from '@ionic/storage';
 import { Geolocation } from '@ionic-native/geolocation';
 import { AgmCoreModule } from '@agm/core'
@@ -23,8 +25,10 @@ import { TempatPage } from '../pages/tempat/tempat';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    CommonModule,
+    FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBQL8r5lzVLYbt5aa8Fvblo6ZIMho4M9hw'
+      apiKey: 'AIzaSyCFKWOJJmMGeKdtt8vUNnSkFjukTZ8Xk3o'
     })
   ],
   bootstrap: [IonicApp],
